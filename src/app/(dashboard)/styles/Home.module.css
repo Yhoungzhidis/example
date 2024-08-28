@@ -1,0 +1,342 @@
+/* Home.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    overflow: auto;
+  }
+  
+  .header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    flex: 1;
+    align-items: center;
+    /* justify-content: flex-end; Move the logo to the right */
+    padding-left: 40px;
+    justify-content: right;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav a {
+    font-weight: bold;
+    color: #0E2347;
+    text-decoration: none;
+    padding-right: 40px;
+  }
+  
+  .main {
+    flex: 2;
+    padding-bottom: 100px;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .heroImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* z-index: -1; */
+  }
+  
+  .heroText {
+    position: absolute;
+    top: 50%;        /* Position from the top at 50% of the hero section */
+    left: 30%;       /* Position from the left at 50% of the hero section */
+    transform: translate(-50%, -50%); /* Center the text by offsetting it by 50% of its width and height */
+    color: white;    /* Ensure the text color is still white */
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    text-align: center; /* Center the text within the container */
+    z-index: 1;  
+    font-weight: bold;
+  }
+  
+  .content {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+    padding-bottom: 100px;
+  }
+  
+  .levels {
+    padding-right: 40px;
+  }
+  
+  .levels h2 {
+    margin-bottom: 15px;
+    padding-left: 50px;
+    color: #072D50;
+  }
+  
+  .levelButtons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .graduatelevel {
+    grid-column: span 2; 
+    width: 100%;
+}
+  
+  .levelButtons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    /* width: 200px; */
+    color: #072D50;
+  }
+  
+  .levelButtons button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .announcements {
+    flex: 2;
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 8px;
+    /* height: 50%; */
+  }
+  
+  .announcements h2 {
+    margin-bottom: 10px;
+    color: #072D50;
+  }
+  
+  .announcements ul {
+    list-style: none;
+    padding: 0;
+    color: #072D50;
+  }
+  
+  .announcements ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #072D50;
+
+  }
+  
+  .catalog {
+    display: block; /* Ensure it takes up the full width of the container */
+    margin: 0 auto; /* Center the catalog button */
+    width: 200px; /* You can adjust the width as needed */
+    padding: 10px 20px; 
+    text-align: center;
+    color: #072D50; /* Center the text */
+}
+
+  
+  .footer {
+    padding: 20px;
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  .social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px 20px 40px;
+    background-color: white;
+    position: relative;
+    display: none;
+  }
+  
+  .titleSection h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #666;
+    display: none;
+  }
+  
+  .titleSection h3 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    display: none;
+  }
+  
+  .notification {
+    position: absolute;
+    top: 50%; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    transform: translateY(-50%);
+    display: none;
+  }
+  .foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #294166;
+    padding: 20px;
+    position: fixed;
+    display: none;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+  }
+  .navIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    position: fixed;
+    padding: 10px;
+    display: none;
+    bottom: 10px; left: 60px;
+    transform: translate(-50%, -50%); 
+  }
+
+  .navcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    position: fixed;
+    padding: 10px;
+    display: none;
+    bottom: 10px; right: 10px;
+    transform: translate(-50%, -50%); 
+  }
+
+  .naIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    position: fixed;
+    padding: 10px;
+    display: none;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+  
+  @media (max-width: 768px) {
+    .header{
+      display: none;
+    }
+    .hd, .titleSection h2, .titleSection h3{
+      display: block;
+    }
+    .notification{
+      right: 0;
+      padding: 30px;
+      display: block;
+    }
+    .heroImage{
+      border-radius: 25px;
+      padding: 10px;
+    }
+    .heroText{
+      left: 50%;  
+    }
+    .levels h2 {
+      font-size: 30px;
+    }
+    .levelButtons{
+      width: 120%;
+      height: 70%;
+      gap: 20px;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .levelButtons button{
+      border-radius: 30px;
+    }
+    .announcements{
+      display: none;
+    }
+    .footer{
+      margin-bottom: 100px;
+    }
+    .foot{
+      display: block;
+    }
+    .navIcon{
+      display: block;
+    }
+    .naIcon{
+      display: block;
+    }
+    .navcon{
+      display: block;
+    }
+    .catalog{
+      place-items: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .levels h2 {
+      font-size: 15px;
+    }
+    .levelButtons{
+      width: 120%;
+      height: 70%;
+      gap: 15px;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    .levelButtons button{
+      border-radius: 10px;
+    }
+    .heroText{
+      font-size: 20px; 
+    }
+    .hd, .titleSection h2, .titleSection h3{
+      font-size: 20px;
+      display: block;
+    }
+    .catalog{
+      /* padding-left: 50px; */
+      padding-right: 50px;
+    }
+  }
+
+
+  
